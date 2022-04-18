@@ -17,27 +17,26 @@ app.get('/games', (req, res) => {
 app.post('/api/v1/login', (req, res) => {
     const { username, password } = req.body
     let user = users.find(i => i.username == username)
-    let callback
+    let resJson
 
     if (user == 'undefined') {
-        callback = {
+        resJson = {
             status: "login fail",
             message: "user not found"
         }
     } else if (user.password == password) {
-        callback = {
+        resJson = {
             status: "succes",
             message: "login succes"
         }
     } else if (user.password != password) {
-        callback = {
+        resJson = {
             status: "login fail",
             message: "wrong password"
         }
     }
 
-    console.log(user)
-    res.status(200).send(callback)
+    res.status(200).send(resJson)
 })
 
 app.get('/api/v1/users', (req, res) => {

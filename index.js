@@ -9,6 +9,9 @@ app.get('/', (req, res) => {
     res.render('index')
 })
 
+app.get('/games', (req, res) => {
+    res.render('games')
+})
 
 app.use((error, req, res, next) => {
     res.status(500).json({

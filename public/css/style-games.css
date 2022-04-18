@@ -1,0 +1,73 @@
+body {
+    background-color: #9C835F;
+}
+
+img#back {
+    width: 2vw;
+}
+
+img#logo {
+    width: 4vw;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #F9B23D;
+    font-size: 2vw;
+    margin: 0;
+}
+
+.container-fluid {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #F9B23D;
+    font-size: 2vw;
+}
+
+.row-header {
+    display: flex;
+    align-items: center;
+    padding-top: 2vh;
+}
+
+.row {
+    text-align: center;
+}
+
+.column-header {
+    margin-left: 2vw;
+}
+
+img#body {
+    width: 6vw;
+}
+
+.col-4 {
+    align-self: center;
+}
+
+h1#vs {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #BD0000;
+    font-size: 4vw;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2vw;
+    margin: 4;
+}
+
+img#refresh {
+    width: 4vw;
+}
+
+.card {
+    background-color: #9C835F;
+    border: 0;
+}
+
+.card:hover {
+    cursor: pointer;
+    background-color: burlywood;
+}
